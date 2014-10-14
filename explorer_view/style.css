@@ -85,6 +85,10 @@ a:hover, a:active {
 	-webkit-border-radius:	5px;
 }
 
+.mainContent select {
+	float: right;
+}
+
 /*sidenav*/
 .topSidebar {
 	width: 21%;
