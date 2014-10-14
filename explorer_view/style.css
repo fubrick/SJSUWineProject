@@ -87,6 +87,7 @@ a:hover, a:active {
 
 .mainContent select {
 	float: right;
+	padding: 2px;
 }
 
 /*sidenav*/
