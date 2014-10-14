@@ -24,4 +24,4 @@ You can always check to see the status of your local space by typing:
 
 		$ git status
 
-for more details please refer to github tutorial or youtube videos. but this should be enough for you to keep track of changes that you made.
+For more details please refer to github tutorial or youtube videos. but this should be enough for you to keep track of changes that you made.
