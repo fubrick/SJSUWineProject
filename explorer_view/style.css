@@ -18,7 +18,8 @@ a {
 }
 
 a:link, a:visited {
-	color: #9e1d63;
+	/*color: #9e1d63;*/
+	color: #000;
 }
 
 a:hover, a:active {
@@ -84,6 +85,35 @@ a:hover, a:active {
 	-webkit-border-radius:	5px;
 }
 
+/*sidenav*/
+.topSidebar {
+	width: 21%;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	-moz-border-radius:	5px;
+	-webkit-border-radius:	5px;
+	padding: 2% 3%;
+	margin: 2% 2% 2% 0%;
+}
+
+.topSidebar nav h2 {
+	color: #f4c77b;
+}
+
+/*sidenav*/
+.topSidebar nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.topSidebar nav a:hover, .topSidebar nav a:active,
+.topSidebar nav a:active a:link, .topSidebar nav .active a:visited {
+	background-color: #9e1d63;
+	text-shadow: none;
+	color: #FFF;
+}
+
 .content {
 	width: 70%;
 	float: right;
@@ -98,6 +128,16 @@ a:hover, a:active {
 	margin-top: 2%;
 }
 
+/*table 1*/
+.wineTable {
+	background-color: #FFF;
+	border-collapse: collapse;
+	border: 3px solid #000;
+	color: #000;
+	width: 100%;
+}
+/*table 2*/
+
 .bottomContent {
 	background-color: #FFF;
 	border-radius: 5px;
@@ -107,46 +147,41 @@ a:hover, a:active {
 	margin-top: 2px;
 }
 
+/*table*/
+	.wines {
+	  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	  margin-left: auto;
+	  margin-right: auto;
+	  /*width: 900px;*/
+	  border-collapse: collapse;
+	}
+
+	.wines td, .wines th {
+	  font-size: 1em;
+	  border: 3px solid #000000;
+	  padding: 3px 7px 2px 7px;
+	}
+
+	.wines th {
+	  font-size: 1.1em;
+	  text-align: left;
+	  padding-top: 5px;
+	  padding-bottom: 4px;
+	  background-color: #9e1d63;
+	  color: #ffffff;
+	}
+
+	.wines tr.alt td {
+	  color: #000000;
+	  background-color: #ca3b65;
+	}
+/*end table*/
+
+
 .postInfo {
 	font-style: italic;
 	color: #999;
 	font-size: 90%;
-}
-
-.topSidebar {
-	width: 21%;
-	float: left;
-	background-color: #FFF;
-	border-radius: 5px;
-	-moz-border-radius:	5px;
-	-webkit-border-radius:	5px;
-	padding: 2% 3%;
-	margin: 2% 3% 2% 0%;
-}
-
-.middleSidebar {
-	width: 21%;
-	margin-right: 3%;
-	float: left;
-	background-color: #FFF;
-	border-radius: 5px;
-	-moz-border-radius:	5px;
-	-webkit-border-radius:	5px;
-	padding: 2% 3%;
-	margin-right: 3%;
-	margin-bottom: 2%
-}
-
-.bottomSidebar {
-	width: 21%;
-	float: left;
-	background-color: #FFF;
-	border-radius: 5px;
-	-moz-border-radius:	5px;
-	-webkit-border-radius:	5px;
-	padding: 2% 3%;
-	margin-right: 3%;
-	margin-bottom: 2%
 }
 
 .mainFooter {
@@ -215,10 +250,8 @@ a:hover, a:active {
 		margin-top: 5px;
 	}
 
-	.topSidebar, .middleSidebar, .bottomSidebar {
-		width: 94%;
-		padding: 2% 3%;
-		margin: 2% 0% 2% 0%;
+	.topSidebar {
+		display: none;
 	}
 
 }
