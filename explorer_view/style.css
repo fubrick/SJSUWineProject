@@ -141,6 +141,22 @@ a:hover, a:active {
 	color: #000;
 	width: 100%;
 }
+
+.produdctListCol_1 {
+	padding: 10px 10px;
+}
+
+.productListCol_2 {
+	padding: 10px 10px;
+}
+
+.productListCol_3 {
+	padding: 10px 10px;
+}
+
+.productListCol_4 {
+	padding: 10px 10px;
+}
 /*table 2*/
 
 .bottomContent {
