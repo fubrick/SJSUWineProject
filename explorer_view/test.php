@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML CODE FOR WEBSITE TEMPLATE</title>
+</head>
+
+<body>
 <?php
 
 $host = 'localhost';
@@ -6,7 +14,7 @@ $user = 'root';
 $password = 'root';
 $database = 'vinobly';
 
-$conn = mysqli_connect("$host:$port", $user, $password, $database);
+$conn = mysqli_connect($host, $user, $password, $database, $port);
 if (!$conn) 
 {
 	die('Could not connect: '.mysql_error());
@@ -25,3 +33,6 @@ while($row = mysqli_fetch_array($result))
 mysqli_close($conn);
 
 ?>
+</body>
+
+</html>
