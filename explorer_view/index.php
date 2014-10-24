@@ -40,56 +40,69 @@
 					<option value="byPriceDesc">Price: high to low</option>
 				</select> 
 				<br>
+				<form id="Form1" action="submit.php" method="post">
+  					Table: <input type="text" name="table"><br>
+  					Fields: <input type="text" name="fields"><br>
+  					OrderBy: <input type="text" name="orderBy"><br>
+  					Limit: <input type="text" name="limit"><br>
+  					<input type="Submit">
+ 				</form>
+ 				<br>
 				<footer>
 					<p class="postInfo">This text can indicate current sorting</p>
 				</footer>
+
 				<content>
 					<table class="wineTable">
-						<tr>
-							<td class="produdctListCol_1" align="center">
-								<a href="#"><img src="img/bottle1.jpg"></a>
-							</td>
-							<td class="productListCol_2" align="left">
-								<p>Louis Latour Marsannay, <br>Pinot Noir from France</p>
-							</td>
-							<td class="productListCol_3" align="left">
-								<p>2013</p>
-							</td>
-							<td class="productListCol_4" align="right">
-								<p>Row: 1<br>Sec: A</p>
-								<p>$47.98</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="produdctListCol_1" align="center">
-								<a href="#"><img src="img/bottle2.jpg"></a>
-							</td>
-							<td class="productListCol_2" align="left">
-								<p>Les Petits Grains Muscat de Saint Jean de Minervols, <br>Muscat from France </p>
-							</td>
-							<td class="productListCol_3" align="left">
-								<p>2009</p>
-							</td>
-							<td class="productListCol_4" align="right">
-								<p>Row: 5<br>Sec: B</p>
-								<p>$118.95</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="produdctListCol_1" align="center">
-								<a href="#"><img src="img/bottle3.jpg"></a>
-							</td>
-							<td class="productListCol_2" align="left">
-								<p>Irony Chardonnay Monterey, <br>Chardonnay from the US</p>
-							</td>
-							<td class="productListCol_3" align="left">
-								<p>2008</p>
-							</td>
-							<td class="productListCol_4" align="right">
-								<p>Row: 6<br>Sec: A</p>
-								<p>$59.95</p>
-							</td>
-						</tr>
+				
+					<?php include("query.php"); ?>				
+<!--
+					<tr>
+						<td class="produdctListCol_1" align="center">
+							<a href="#"><img src="img/bottle1.jpg"></a>
+						</td>
+						<td class="productListCol_2" align="left">
+							<p>Louis Latour Marsannay, <br>Pinot Noir from France</p>
+						</td>
+						<td class="productListCol_3" align="left">
+							<p>2013</p>
+						</td>
+						<td class="productListCol_4" align="right">
+							<p>Row: 1<br>Sec: A</p>
+							<p>$47.98</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="produdctListCol_1" align="center">
+							<a href="#"><img src="img/bottle2.jpg"></a>
+						</td>
+						<td class="productListCol_2" align="left">
+							<p>Les Petits Grains Muscat de Saint Jean de Minervols, <br>Muscat from France </p>
+						</td>
+						<td class="productListCol_3" align="left">
+							<p>2009</p>
+						</td>
+						<td class="productListCol_4" align="right">
+							<p>Row: 5<br>Sec: B</p>
+							<p>$118.95</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="produdctListCol_1" align="center">
+							<a href="#"><img src="img/bottle3.jpg"></a>
+						</td>
+						<td class="productListCol_2" align="left">
+							<p>Irony Chardonnay Monterey, <br>Chardonnay from the US</p>
+						</td>
+						<td class="productListCol_3" align="left">
+							<p>2008</p>
+						</td>
+						<td class="productListCol_4" align="right">
+							<p>Row: 6<br>Sec: A</p>
+							<p>$59.95</p>
+						</td>
+					</tr>
+--!>
 					</table>
 
 				</content>
